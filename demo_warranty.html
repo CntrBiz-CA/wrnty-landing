@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>wrnty — Гарантийный талон #WR-2026-00001</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue',sans-serif;background:#F5F5F7;min-height:100vh;padding:20px 16px 40px;-webkit-font-smoothing:antialiased}
+.logo{text-align:center;margin-bottom:20px;font-size:15px;font-weight:600;letter-spacing:-.02em;color:#1D1D1F}
+.logo span{color:#0B8C5E}
+.hero{background:linear-gradient(160deg,#0B2E1E 0%,#0B8C5E 100%);border-radius:20px;padding:24px 20px 20px;margin-bottom:14px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-40px;right:-40px;width:160px;height:160px;border-radius:50%;background:rgba(255,255,255,.04)}
+.status-tag{display:inline-block;background:rgba(29,185,122,.2);color:#1DB97A;font-size:11px;font-weight:600;padding:4px 10px;border-radius:10px;margin-bottom:12px;letter-spacing:.05em}
+.product-name{font-size:20px;font-weight:700;color:#fff;margin-bottom:4px;letter-spacing:-.02em}
+.serial{font-size:12px;color:rgba(255,255,255,.45);margin-bottom:18px;font-family:monospace}
+.dates{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:16px}
+.date-card{background:rgba(0,0,0,.25);border-radius:10px;padding:10px 12px}
+.date-label{font-size:9px;color:rgba(255,255,255,.4);margin-bottom:3px;letter-spacing:.04em;text-transform:uppercase}
+.date-val{font-size:13px;font-weight:600;color:#fff;font-family:monospace}
+.progress-wrap{margin-bottom:4px}
+.progress-label{display:flex;justify-content:space-between;margin-bottom:6px;font-size:11px;color:rgba(255,255,255,.5)}
+.progress-track{height:5px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden}
+.progress-fill{height:100%;background:#1DB97A;border-radius:3px;width:100%}
+.section{background:#fff;border-radius:16px;padding:18px;margin-bottom:12px}
+.section-title{font-size:11px;font-weight:600;color:#86868B;text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px}
+.seller-row{display:flex;align-items:center;gap:12px}
+.seller-avatar{width:44px;height:44px;border-radius:10px;background:#1D1D1F;display:flex;align-items:center;justify-content:center;font-family:monospace;font-size:13px;font-weight:600;color:#1DB97A;flex-shrink:0}
+.seller-name{font-size:15px;font-weight:600;color:#1D1D1F;margin-bottom:2px}
+.seller-addr{font-size:12px;color:#86868B}
+.verified{margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:3px}
+.verified-badge{font-size:10px;font-weight:600;background:#E1F5EE;color:#0B8C5E;padding:3px 8px;border-radius:4px;font-family:monospace}
+.wrnty-id{font-size:10px;color:#86868B;font-family:monospace}
+.conditions{display:flex;flex-direction:column;gap:8px}
+.cond-row{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:#6E6E73;line-height:1.45}
+.dot{width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;flex-shrink:0;margin-top:1px}
+.dot-ok{background:#E1F5EE;color:#0B8C5E}
+.dot-no{background:#FFF0F0;color:#FF3B30}
+.qr-section{display:flex;align-items:center;gap:16px}
+.qr-box{width:80px;height:80px;background:#1D1D1F;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:44px;flex-shrink:0}
+.qr-title{font-size:14px;font-weight:600;color:#1D1D1F;margin-bottom:4px}
+.qr-sub{font-size:12px;color:#86868B;line-height:1.5;margin-bottom:6px}
+.qr-id{font-family:monospace;font-size:10px;color:#86868B}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.action-btn{padding:13px;border-radius:12px;font-size:14px;font-weight:600;text-align:center;cursor:pointer;border:none;font-family:inherit;transition:opacity .15s}
+.btn-primary{background:#0B8C5E;color:#fff}
+.btn-secondary{background:#F5F5F7;color:#1D1D1F;border:1px solid #D2D2D7}
+.footer{text-align:center;font-size:12px;color:#86868B;padding:4px 0 8px}
+.footer a{color:#0B8C5E;text-decoration:none}
+.demo-banner{background:#FAEEDA;border-radius:12px;padding:10px 14px;margin-bottom:16px;font-size:12px;color:#854F0B;text-align:center;line-height:1.5}
+</style>
+</head>
+<body>
+
+<div class="logo">wrnty<span>.</span>net</div>
+
+<div class="demo-banner">
+  Это демо-талон для презентации wrnty продавцам<br>
+  <strong>Реальный талон приходит покупателю по SMS</strong>
+</div>
+
+<div class="hero">
+  <div class="status-tag">● АКТИВНА</div>
+  <div class="product-name">iPhone 16 Pro 256GB</div>
+  <div class="serial">IMEI: 355934/221640125 · S/N: C02ZX1234</div>
+  <div class="dates">
+    <div class="date-card">
+      <div class="date-label">Куплено</div>
+      <div class="date-val">23.03.26</div>
+    </div>
+    <div class="date-card">
+      <div class="date-label">До</div>
+      <div class="date-val">23.03.27</div>
+    </div>
+    <div class="date-card">
+      <div class="date-label">Осталось</div>
+      <div class="date-val" style="color:#1DB97A">365 дн</div>
+    </div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-label">
+      <span>Гарантия</span>
+      <span>365 из 365 дней</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill"></div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Продавец</div>
+  <div class="seller-row">
+    <div class="seller-avatar">CH</div>
+    <div>
+      <div class="seller-name">Charge</div>
+      <div class="seller-addr">ул. Достык 8, г. Алматы · +7 700 880 00 00</div>
+    </div>
+    <div class="verified">
+      <div class="verified-badge">✓ wrnty</div>
+      <div class="wrnty-id">#WR-2026-00001</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Условия гарантии</div>
+  <div class="conditions">
+    <div class="cond-row"><div class="dot dot-ok">✓</div>Бесплатный ремонт производственных дефектов в течение 12 месяцев</div>
+    <div class="cond-row"><div class="dot dot-ok">✓</div>Сервисное обслуживание в течение 11 месяцев после окончания гарантии</div>
+    <div class="cond-row"><div class="dot dot-no">✕</div>Механические повреждения, сколы, трещины экрана</div>
+    <div class="cond-row"><div class="dot dot-no">✕</div>Повреждения от влаги, жидкости, попадания посторонних предметов</div>
+    <div class="cond-row"><div class="dot dot-no">✕</div>Неавторизованный ремонт или модификация устройства</div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Верификация</div>
+  <div class="qr-section">
+    <div class="qr-box">⬛</div>
+    <div>
+      <div class="qr-title">QR для сервисного центра</div>
+      <div class="qr-sub">Сканируется в АСЦ для мгновенного подтверждения гарантии</div>
+      <div class="qr-id">wrnty.net/v/WR-2026-00001</div>
+    </div>
+  </div>
+</div>
+
+<div class="actions">
+  <button class="action-btn btn-primary">⬇ Скачать PDF</button>
+  <button class="action-btn btn-secondary">↗ Поделиться</button>
+</div>
+
+<div class="footer">
+  Талон выдан через <a href="https://wrnty.net">wrnty.net</a><br>
+  Электронный документ равнозначен бумажному — Закон РК, ст. 1 пп. 14
+</div>
+
+</body>
+</html>
